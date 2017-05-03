@@ -73,6 +73,14 @@ config IOSCHED_ZEN
 	FCFS, dispatches are back-inserted, deadlines ensure fairness.
         Should work best with devices where there is no travel delay.
 
+config IOSCHED_SIOPLUS
+	tristate "Simple I/O scheduler plus"
+	default y
+	---help---
+	Based on the original SIO scheduler with improvements. Functionality for specifying
+	the starvation of async reads against sync reads; starved write requests counter
+	only counts when there actually are write requests in the queue; fixed a bug).
+
 choice
 	prompt "Default I/O scheduler"
 	default DEFAULT_ZEN
