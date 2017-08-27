@@ -33,7 +33,7 @@ unzip -o "$ZIP";
 set_perm_recursive 0 0 0777 0777 /tmp/anykernel;
 
 ui_print "$(file_getprop /tmp/anykernel/anykernel.sh kernel.string)";
-ui_print "                  V4                ";
+ui_print "                  V5                ";
 ui_print "      _   _    __    _       __     ";
 ui_print "     | |_| |  /  \  | |     /  \    ";
 ui_print "     |  _  | |    | | |__  |    |   ";
